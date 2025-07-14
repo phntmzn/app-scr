@@ -81,8 +81,6 @@ This repository supports learning in:
 ---
 
 ## 🧾 Sample Layout Example
-
-<pre lang="markdown">
 ```
 apple-script-malware-collection/
 ├── persistence/
@@ -97,4 +95,22 @@ apple-script-malware-collection/
 │   └── objc-inline-c.scpt
 └── README.md
 ```
-</pre>
+---
+
+## 🔐 Ethical Use Notice
+
+This repository is distributed for **research, education, and blue team training**.  
+By accessing this repository, you agree **not to use it for malicious purposes**.  
+Unauthorized deployment of these samples in live environments may be illegal.
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**, with the strong expectation of **ethical usage only**.  
+See [`LICENSE`](./LICENSE) for details.
+
+---
+🧷 Stay patched.  
+🧠 Stay curious.  
+🛡 Stay ethical.
