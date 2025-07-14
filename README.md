@@ -1,4 +1,4 @@
-# 🍎 AppleScript Malware Collection
+# 🍎🪱🦠 AppleScript Malware Collection 🦠🪱🍎
 
 A curated archive of macOS malware samples written in AppleScript.  
 This repository is for **educational purposes**, **reverse engineering**, and **security research**.
