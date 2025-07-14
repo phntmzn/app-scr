@@ -46,7 +46,7 @@ Each sample is commented (where possible) for analysis.
 | ⌨️ Keylogger      | Captures keystrokes and foreground window changes                           |
 | 📎 Downloader     | Fetches second-stage payloads using `do shell script`                       |
 | 🧨 Exploiter      | Runs sudo escalations, system modification, or privilege probing            |
-| 🧬 Hybrid         | Combines shell, Python, or C code into `.scpt` files                        |
+| 🧬 Hybrid         | Combines shell, Python, JavaScript, or C code into `.scpt` files                        |
 | 🫥 Obfuscation    | Uses Base64, ROT13, or Unicode mangling to evade static detection           |
 | 📦 Binder         | Attaches malicious logic to `.dmg`, `.pkg`, or `.app` installers            |
 
