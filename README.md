@@ -80,11 +80,21 @@ This repository supports learning in:
 
 ---
 
-## 📚 References
+## 🧾 Sample Layout Example
 
-- **Patrick Wardle** – _The Art of Mac Malware, Volume I_  
-- **SentinelOne Labs** – [Offensive AppleScript Attacks](https://www.sentinelone.com/blog/how-offensive-actors-use-applescript-for-attacking-macos/)  
-- **Objective-See’s Malware Repo** – [GitHub](https://github.com/objective-see/Malware)  
-- **VirusTotal** and **VirusShare** – Malware sample databases
-
----
+<pre lang="markdown">
+```
+apple-script-malware-collection/
+├── persistence/
+│   └── evil-launchagent.scpt
+├── stealers/
+│   └── safari-keychain-dump.scpt
+├── keyloggers/
+│   └── keystroke-capture.scpt
+├── downloaders/
+│   └── remote-dropper.scpt
+├── hybrids/
+│   └── objc-inline-c.scpt
+└── README.md
+```
+</pre>
