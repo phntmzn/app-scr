@@ -1,0 +1,23 @@
+-- === USER CONFIGURATION ===
+set adDomain to "EXAMPLE.LOCAL" -- Replace with your AD domain
+set adUsername to "adadmin"     -- Replace with your AD admin account
+set adPassword to "adpassword"  -- Replace with the AD admin password
+set computerID to "mac-note001" -- Unique name for this Mac in AD
+
+-- === BIND TO ACTIVE DIRECTORY ===
+do shell script "dsconfigad -add " & adDomain & " -username " & adUsername & " -password " & adPassword & " -computer " & computerID with administrator privileges
+
+-- === CREATE 10 LOCAL ADMIN USERS ===
+repeat with i from 1 to 10
+	set username to "noteuser" & i
+	set fullname to "Note Admin " & i
+	set password to "changeme123" -- You may want to randomize or rotate these
+	
+	-- Create user
+	do shell script "sysadminctl -addUser " & username & " -fullName '" & fullname & "' -password '" & password & "'"
+	
+	-- Make user admin
+	do shell script "dseditgroup -o edit -a " & username & " -t user admin"
+end repeat
+
+display dialog "✅ 10 admin users created and system bound to directory: " & adDomain
