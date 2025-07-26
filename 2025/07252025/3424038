@@ -1,0 +1,14 @@
+-- AppleScript: Create 10 local admin users
+repeat with i from 1 to 10
+	set username to "noteuser" & i
+	set fullname to "Note Admin " & i
+	set password to "changeme123" -- You should change this or randomize it
+	
+	-- Create the user
+	do shell script "sysadminctl -addUser " & username & " -fullName '" & fullname & "' -password '" & password & "'"
+	
+	-- Add the user to the admin group
+	do shell script "dseditgroup -o edit -a " & username & " -t user admin"
+end repeat
+
+display dialog "✅ Created 10 admin users (noteuser1 to noteuser10)."
